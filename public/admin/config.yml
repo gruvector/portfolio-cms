@@ -20,7 +20,7 @@ collections:
             - label: "Value Propositions"
               name: "typed"
               widget: list
-              field:
+              fields:
                 - { label: "Text", name: "text", widget: "string" }
             - label: "First Button"
               name: "firstButton"
@@ -88,5 +88,5 @@ collections:
         - label: "Footer"
           name: "footer"
           widget: object
-          field:
+          fields:
             - { label: "Text", name: "text", widget: "string" }
