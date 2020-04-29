@@ -74,12 +74,17 @@ collections:
             - { label: "Text", name: "text", widget: "string" }
         - label: "Portfolio"
           name: "portfolio"
-          widget: list
+          widget: object
           fields:
-            - { label: "Image", name: "image", widget: "image" }
             - { label: "Title", name: "title", widget: "string" }
-            - { label: "Button Text", name: "btnText", widget: "string" }
-            - { label: "Button Link", name: "btnLink", widget: "string" }
+            - label: "Projects"
+              name: "projects"
+              widget: object
+              fields:
+                - { label: "Image", name: "image", widget: "image" }
+                - { label: "Title", name: "title", widget: "string" }
+                - { label: "Button Text", name: "btnText", widget: "string" }
+                - { label: "Button Link", name: "btnLink", widget: "string" }
         - label: "Footer"
           name: "footer"
           widget: object

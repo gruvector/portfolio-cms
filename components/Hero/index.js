@@ -2,6 +2,10 @@ import Typed from 'react-typed';
 
 export default ({ data }) => {
     const { heading, typed, firstButton, secondButton, social, image } = data;
+    const typedStrings = [];
+    typed.forEach( string => {
+        typedStrings.push(string.text);
+    })
     return (
         <div
             id="hero"
@@ -13,7 +17,7 @@ export default ({ data }) => {
                 <h1 className="text-2xl font-bold">{heading}</h1>
                 <h2 className="text-5xl font-bold" style={{ height: "70px" }}>
                     <Typed
-                        strings={typed}
+                        strings={typedStrings}
                         typeSpeed={70}
                         backSpeed={50}
                         showCursor={false}
