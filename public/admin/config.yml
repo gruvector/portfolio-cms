@@ -10,7 +10,6 @@ collections:
     - label: "Main"
       name: "main"
       file: "content/main.md"
-      preview_path: "/"
       fields:
         - label: 'Hero'
           name: 'hero'
