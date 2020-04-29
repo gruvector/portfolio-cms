@@ -1,0 +1,87 @@
+backend:
+  name: git-gateway
+  branch: master
+media_folder: public/img
+public_folder: img
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+    - label: "Main"
+      name: "main"
+      file: "content/main.md"
+      fields:
+        - label: 'Hero'
+          name: 'hero'
+          widget: object
+          fields:
+            - { label: "Background Image (Big image please)", name: "image", widget: "image" }
+            - { label: "Heading", name: "heading", widget: "string" }
+            - label: "Value Propositions"
+              name: "typed"
+              widget: list
+              field:
+                - { label: "Text", name: "text", widget: "string" }
+            - label: "First Button"
+              name: "firstButton"
+              widget: object
+              fields:
+                - { label: "Icon (from dev.materialdesignicons.com/icons) example: briefcase-outline", name: "icon", widget: "string" }
+                - { label: "Text", name: "text", widget: "string" }
+                - { label: "Link", name: "link", widget: "string" }
+            - label: "Second Button"
+              name: "secondButton"
+              widget: object
+              fields:
+                - { label: "Icon (from dev.materialdesignicons.com/icons) example: whatsapp", name: "icon", widget: "string" }
+                - { label: "Text", name: "text", widget: "string" }
+                - { label: "Link", name: "link", widget: "string" }
+            - label: "Social"
+              name: "social"
+              widget: object
+              fields:
+                - label: "Facebook"
+                  name: "facebook"
+                  widget: object
+                  fields:
+                    - { label: "Show", name: "show", widget: "boolean" }
+                    - { label: "Link", name: "link", widget: "string" }
+                - label: "Instagram"
+                  name: "instagram"
+                  widget: object
+                  fields:
+                    - { label: "Show", name: "show", widget: "boolean" }
+                    - { label: "Link", name: "link", widget: "string" }
+                - label: "LinkedIn"
+                  name: "linkedin"
+                  widget: object
+                  fields:
+                    - { label: "Show", name: "show", widget: "boolean" }
+                    - { label: "Link", name: "link", widget: "string" }
+        - label: "About"
+          name: "about"
+          widget: object
+          fields:
+            - { label: "Heading", name: "heading", widget: "string" }
+            - { label: "Text", name: "text", widget: "text" }
+            - { label: "Image", name: "image", widget: "image" }
+        - label: "Features"
+          name: "features"
+          widget: list
+          fields:
+            - { label: "Icon (from dev.materialdesignicons.com/icons)", name: "icon", widget: "string" }
+            - { label: "Title", name: "title", widget: "string" }
+            - { label: "Text", name: "text", widget: "string" }
+        - label: "Portfolio"
+          name: "portfolio"
+          widget: list
+          fields:
+            - { label: "Image", name: "image", widget: "image" }
+            - { label: "Title", name: "title", widget: "string" }
+            - { label: "Button Text", name: "btnText", widget: "string" }
+            - { label: "Button Link", name: "btnLink", widget: "string" }
+        - label: "Footer"
+          name: "footer"
+          widget: object
+          field:
+            - { label: "Text", name: "text", widget: "string" }
