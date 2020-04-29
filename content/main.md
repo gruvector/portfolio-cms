@@ -4,7 +4,7 @@ hero:
     icon: briefcase-outline
     link: '/#portofolio'
     text: My work
-  heading: 'I''m John Doe, and I creat'
+  heading: 'I''m Paco Cu, and I create'
   image: /img/hero.jpg
   secondButton:
     icon: whatsapp
