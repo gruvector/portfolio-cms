@@ -5,7 +5,7 @@ hero:
     link: '/#portofolio'
     text: My work
   heading: 'I''m Paco Cu, and I create'
-  image: /img/hero.jpg
+  image: /img/hero.jpeg
   secondButton:
     icon: whatsapp
     link: '/#contact'
@@ -26,7 +26,7 @@ hero:
     - text: great experiences.
 about:
   heading: Who am I?
-  image: /img/about.jpg
+  image: /img/about.jpeg
   text: >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel dapibus
     mi, sit amet consequat leo. Integer non dolor non elit sodales consequat.
@@ -51,27 +51,27 @@ portfolio:
   projects:
     - btnLink: 'https://behance.com'
       btnText: View on Behance
-      image: /img/project-1.jpg
+      image: /img/project-1.jpeg
       title: ShopoShopy
     - btnLink: 'https://behance.com'
       btnText: View on Behance
-      image: /img/project-2.jpg
+      image: /img/project-2.jpeg
       title: LogoLogy
     - btnLink: 'https://behance.com'
       btnText: View on Behance
-      image: /img/project-3.jpg
+      image: /img/project-3.jpeg
       title: SitoSity
     - btnLink: 'https://behance.com'
       btnText: View on Behance
-      image: /img/project-4.jpg
+      image: /img/project-4.jpeg
       title: DrawoDrawy
     - btnLink: 'https://behance.com'
       btnText: View on Behance
-      image: /img/project-5.jpg
+      image: /img/project-5.jpeg
       title: PagoPagy
     - btnLink: 'https://behance.com'
       btnText: View on Behance
-      image: /img/project-6.jpg
+      image: /img/project-6.jpeg
       title: UIoUXy
   title: My work
 footer:

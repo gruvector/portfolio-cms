@@ -15,7 +15,7 @@ export default ({ data }) => {
             <div className="hero__overlay absolute top-0 left-0 h-screen w-screen bg-black opacity-50"></div>
             <div className="hero__content text-center z-40">
                 <h1 className="text-2xl font-bold">{heading}</h1>
-                <h2 className="text-5xl font-bold" style={{ height: "70px" }}>
+                <h2 className="text-5xl font-bold" style={{ minHeight: "70px" }}>
                     <Typed
                         strings={typedStrings}
                         typeSpeed={70}
