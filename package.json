@@ -9,11 +9,11 @@
     "export": "npm run build && next export"
   },
   "dependencies": {
-    "frontmatter-markdown-loader": "^3.4.0",
+    "frontmatter-markdown-loader": "3.4.0",
     "next": "9.3.6",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-reveal": "^1.2.2",
-    "react-typed": "^1.2.0"
+    "react-reveal": "1.2.2",
+    "react-typed": "1.2.0"
   }
 }
