@@ -1,4 +1,4 @@
 {
   "extends": ["github>karlhorky/renovate-config"],
-  "ignoreDeps": ["mdx-deck", "raw-loader"]
+  "schedule": ["every month"]
 }
