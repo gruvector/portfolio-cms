@@ -1,11 +1,11 @@
-import Hero from '../components/Hero'
-import About from '../components/About'
-import Features from '../components/Features'
-import Portfolio from '../components/Portfolio'
-import Footer from '../components/Footer'
-import { attributes } from '../content/main.md'
+import About from '../components/About';
+import Features from '../components/Features';
+import Footer from '../components/Footer';
+import Hero from '../components/Hero';
+import Portfolio from '../components/Portfolio';
+import { attributes } from '../content/main.md';
 
-export default () => {
+const Home = () => {
   const { hero, about, features, portfolio, footer } = attributes;
   return (
     <div className="container">
@@ -15,5 +15,7 @@ export default () => {
       <Portfolio data={portfolio} />
       <Footer data={footer} />
     </div>
-  )
-}
+  );
+};
+
+export default Home;
