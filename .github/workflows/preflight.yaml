@@ -10,4 +10,7 @@ jobs:
       - name: Get UpLeveled check image
         run: docker pull ghcr.io/upleveled/preflight
       - name: Run Get UpLeveled check image
-        run: docker run ghcr.io/upleveled/preflight https://github.com/upleveled/portfolio-cms
+        id: preflight-check
+        run: echo "::set-output name=preflight::$(docker run ghcr.io/upleveled/preflight https://github.com/upleveled/portfolio-cms)"
+      - name: step-2
+        run: echo "${{ steps.preflight-check.outputs.preflight }}"
