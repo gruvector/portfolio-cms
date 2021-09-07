@@ -11,7 +11,7 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <link rel="icon" href="/favicon.ico" />
-          <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+          <link rel="shortcut icon" type="image/icon" href="/favicon.icon" />
           <link
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
             rel="stylesheet"
