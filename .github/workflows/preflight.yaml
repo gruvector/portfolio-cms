@@ -1,5 +1,5 @@
 name: UpLeveled Preflight check
-on: push
+on: [push]
 
 jobs:
   issue_commented:
