@@ -8,6 +8,5 @@ jobs:
 
     steps:
       - name: Run UpLeveled Drone Script
-        run: |
-        docker pull ghcr.io/upleveled/preflight
-        docker run ghcr.io/upleveled/preflight https://github.com/upleveled/portfolio-cms
+        run: docker pull ghcr.io/upleveled/preflight
+        run: docker run ghcr.io/upleveled/preflight https://github.com/upleveled/portfolio-cms
