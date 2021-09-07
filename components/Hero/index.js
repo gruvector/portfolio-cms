@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Typed from 'react-typed';
 
 const Hero = ({ data }) => {
@@ -16,7 +17,7 @@ const Hero = ({ data }) => {
         backgroundRepeat: 'none',
       }}
     >
-      <div className="hero__overlay absolute top-0 left-0 h-screen w-screen bg-black opacity-50"></div>
+      <div className="hero__overlay absolute top-0 left-0 h-screen w-screen bg-black opacity-50" />
       <div className="hero__content text-center z-40">
         <h1 className="text-2xl font-bold">{heading}</h1>
         <h2 className="text-5xl font-bold" style={{ minHeight: '70px' }}>
@@ -33,44 +34,47 @@ const Hero = ({ data }) => {
             href={firstButton.link}
             className="font-bold border-solid border-2 border-white py-3 px-5 mx-3 hover:bg-white hover:text-gray-800"
           >
-            <i className={`mdi mdi-${firstButton.icon} mr-2 text-xl`}></i>
+            <i className={`mdi mdi-${firstButton.icon} mr-2 text-xl`} />
             {firstButton.text}
           </button>
           <button
             href={secondButton.link}
             className="font-bold border-solid border-2 border-white py-3 px-5 mx-3 hover:bg-white hover:text-gray-800"
           >
-            <i className={`mdi mdi-${secondButton.icon} mr-2 text-xl`}></i>
+            <i className={`mdi mdi-${secondButton.icon} mr-2 text-xl`} />
             {secondButton.text}
           </button>
         </div>
         <div className="hero__social flex justify-center py-3">
           {social.facebook.show && (
-            <a
-              href={social.facebook.link}
-              target="_blank"
-              className="mx-2 px-1 text-xl hover:bg-gray-800 rounded-lg"
-            >
-              <i className="mdi mdi-facebook"></i>
-            </a>
+            <Link href={social.facebook.link}>
+              <a
+                target="_blank"
+                className="mx-2 px-1 text-xl hover:bg-gray-800 rounded-lg"
+              >
+                <i className="mdi mdi-facebook" />
+              </a>
+            </Link>
           )}
           {social.instagram.show && (
-            <a
-              href={social.instagram.link}
-              target="_blank"
-              className="mx-2 px-1 text-xl hover:bg-gray-800 rounded-lg"
-            >
-              <i className="mdi mdi-instagram"></i>
-            </a>
+            <Link href={social.instagram.link}>
+              <a
+                target="_blank"
+                className="mx-2 px-1 text-xl hover:bg-gray-800 rounded-lg"
+              >
+                <i className="mdi mdi-instagram" />
+              </a>
+            </Link>
           )}
           {social.linkedin.show && (
-            <a
-              href={social.linkedin.link}
-              target="_blank"
-              className="mx-2 px-1 text-xl hover:bg-gray-800 rounded-lg"
-            >
-              <i className="mdi mdi-linkedin"></i>
-            </a>
+            <Link href={social.linkedin.link}>
+              <a
+                target="_blank"
+                className="mx-2 px-1 text-xl hover:bg-gray-800 rounded-lg"
+              >
+                <i className="mdi mdi-linkedin" />
+              </a>
+            </Link>
           )}
         </div>
       </div>
