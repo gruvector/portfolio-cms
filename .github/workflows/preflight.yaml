@@ -18,4 +18,4 @@ jobs:
           MY_STRING="${MY_STRING//$'\r'/'%0D'}"
           echo "::set-output name=preflight::$MY_STRING"
       - name: step-2
-        run: echo "${{ steps.preflight-check.outputs.preflight }}"
+        run: output=${{ steps.preflight-check.outputs.preflight }} if [[ $output == *"SUCCESS"* ]]; then exit 1 fi
