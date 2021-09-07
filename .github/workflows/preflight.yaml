@@ -2,11 +2,12 @@ name: UpLeveled Preflight check
 on: [push]
 
 jobs:
-  issue_commented:
+  Preflight-check:
     name: UpLeveled Preflight check
     runs-on: ubuntu-latest
 
     steps:
-      - name: Run UpLeveled Drone Script
+      - name: Get UpLeveled check image
         run: docker pull ghcr.io/upleveled/preflight
+      - name: Run Get UpLeveled check image
         run: docker run ghcr.io/upleveled/preflight https://github.com/upleveled/portfolio-cms
