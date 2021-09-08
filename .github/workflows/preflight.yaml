@@ -16,10 +16,6 @@ jobs:
           MY_STRING="${MY_STRING//'%'/'%25'}"
           MY_STRING="${MY_STRING//$'\n'/'%0A'}"
           MY_STRING="${MY_STRING//$'\r'/'%0D'}"
-          echo "::set-output name=preflight::$MY_STRING"
-      - name: Match preflight output
-        run: |
-          output=${{ steps.preflight-check.outputs.preflight }}
-          if [[ $output == *"FAILED"* ]]; then
+          if [[ $MY_STRING == *"FAILED"* ]]; then
           exit 1
           fi
