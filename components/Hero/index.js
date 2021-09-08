@@ -10,6 +10,7 @@ const Hero = ({ data }) => {
   return (
     <div
       id="hero"
+      data-cy="my-hero"
       className="h-screen w-screen bg-gray-800 text-white flex items-center justify-center"
       style={{
         backgroundImage: `url('${image}')`,
