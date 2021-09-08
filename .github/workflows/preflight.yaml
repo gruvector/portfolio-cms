@@ -10,9 +10,8 @@ jobs:
       - name: Get UpLeveled check image
         run: docker pull ghcr.io/upleveled/preflight
       - name: Run Get UpLeveled check image
-        id: preflight-check
         run: |
-          MY_STRING=$(docker run ghcr.io/upleveled/preflight https://github.com/Josehower/My-Adventuring-Party)
+          MY_STRING=$(docker run ghcr.io/upleveled/preflight https://github.com/${{ github.repository}})
           MY_STRING="${MY_STRING//'%'/'%25'}"
           MY_STRING="${MY_STRING//$'\n'/'%0A'}"
           MY_STRING="${MY_STRING//$'\r'/'%0D'}"
