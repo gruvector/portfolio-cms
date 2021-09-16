@@ -23,7 +23,7 @@
     "@types/react-dom": "^17.0.5",
     "@typescript-eslint/eslint-plugin": "^4.21.0",
     "@typescript-eslint/parser": "^4.21.0",
-    "@upleveled/eslint-config-upleveled": "1.17.0",
+    "@upleveled/eslint-config-upleveled": "1.17.1",
     "@upleveled/eslint-plugin-upleveled": "^1.1.0",
     "babel-eslint": "^10.1.0",
     "cypress": "^8.3.1",
