@@ -2315,7 +2315,7 @@ dayjs@^1.10.4:
   resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.11.6.tgz#2e79a226314ec3ec904e3ee1dd5a4f5e5b1c7afb"
   integrity sha512-zZbY5giJAinCG+7AGaw0wIhNZ6J8AhWuSXKvuc1KAyMiRsvGQWqh4L+MomvhdAYjN+lqvVCMq1I41e3YHvXkyQ==
 
-debug@4, debug@^4.1.0, debug@^4.1.1, debug@^4.3.2, debug@^4.3.3, debug@^4.3.4:
+debug@4, debug@4.3.4, debug@^4.1.0, debug@^4.1.1, debug@^4.3.2, debug@^4.3.3, debug@^4.3.4:
   version "4.3.4"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.4.tgz#1319f6579357f2338d3337d2cdd4914bb5dcc865"
   integrity sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==
@@ -3927,6 +3927,13 @@ listr2@^3.8.3:
     rxjs "^7.5.1"
     through "^2.3.8"
     wrap-ansi "^7.0.0"
+
+local-cypress@1.2.6:
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/local-cypress/-/local-cypress-1.2.6.tgz#13d49beb5112f9c06d710388b721be1512a54c60"
+  integrity sha512-F3d7eyZNkqOwEamtziRgzleCiKd05z3leIyVR/G9w6IMwnYn4wRtw68C/THx6C+PUFDsBgwNUVNuReRSKRj70A==
+  dependencies:
+    debug "4.3.4"
 
 locate-path@^5.0.0:
   version "5.0.0"
