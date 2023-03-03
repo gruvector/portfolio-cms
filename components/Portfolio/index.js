@@ -13,7 +13,7 @@ const Portfolio = ({ data }) => {
         <div className="portfolio__grid grid grid-flow-cols md:grid-cols-2 xl:grid-cols-3 gap-8">
           {projects.map((project) => (
             <div
-              key={project.title}
+              key={`project-${project.title}`}
               className="portfolio__project h-56"
               style={{
                 background: `url('${project.image}') center`,
