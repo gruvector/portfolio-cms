@@ -8,6 +8,12 @@
       }
     ]
   },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "ESNext",
+      "moduleResolution": "Node"
+    }
+  },
   "include": [
     "**/.eslintrc.cjs",
     "**/*.ts",
