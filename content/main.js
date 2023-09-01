@@ -2,12 +2,12 @@ export const attributes = {
   hero: {
     firstButton: {
       icon: 'briefcase-outline',
-      link: '/#portofolio',
-      text: 'My work',
+      link: '/#portfolio',
+      text: 'Portfolio',
     },
     heading: "I'm Paco Cu, and I create",
     image: '/img/hero.jpeg',
-    secondButton: { icon: 'whatsapp', link: '/#contact', text: 'Contact' },
+    secondButton: { icon: 'whatsapp', link: '/#about', text: 'About me' },
     social: {
       facebook: { link: 'https://facebook.com', show: true },
       instagram: { link: 'https://instagram.com', show: true },
