@@ -1,6 +1,11 @@
 import Fade from 'react-reveal/Slide';
+import { attributes } from '../../content/main';
 
-const About = ({ data }) => {
+type Props = {
+  data: (typeof attributes)['about'];
+};
+
+export default function About({ data }: Props) {
   const { heading, text, image } = data;
   return (
     <div
@@ -24,6 +29,4 @@ const About = ({ data }) => {
       />
     </div>
   );
-};
-
-export default About;
+}

@@ -3,9 +3,9 @@ import Features from '../components/Features';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import Portfolio from '../components/Portfolio';
-import { attributes } from '../content/main.js';
+import { attributes } from '../content/main';
 
-const Home = () => {
+export default function HomePage() {
   const { hero, about, features, portfolio, footer } = attributes;
   return (
     <div className="container">
@@ -16,6 +16,4 @@ const Home = () => {
       <Footer data={footer} />
     </div>
   );
-};
-
-export default Home;
+}

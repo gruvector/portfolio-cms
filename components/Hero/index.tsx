@@ -1,9 +1,14 @@
 import Link from 'next/link';
 import Typed from 'react-typed';
+import { attributes } from '../../content/main';
 
-const Hero = ({ data }) => {
+type Props = {
+  data: (typeof attributes)['hero'];
+};
+
+export default function Hero({ data }: Props) {
   const { heading, typed, firstButton, secondButton, social, image } = data;
-  const typedStrings = [];
+  const typedStrings: string[] = [];
   typed.forEach((string) => {
     typedStrings.push(string.text);
   });
@@ -78,6 +83,4 @@ const Hero = ({ data }) => {
       </div>
     </div>
   );
-};
-
-export default Hero;
+}

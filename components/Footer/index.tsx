@@ -1,4 +1,10 @@
-const Footer = ({ data }) => {
+import { attributes } from '../../content/main';
+
+type Props = {
+  data: (typeof attributes)['footer'];
+};
+
+export default function Footer({ data }: Props) {
   const { text } = data;
   return (
     <div
@@ -8,6 +14,4 @@ const Footer = ({ data }) => {
       {text}
     </div>
   );
-};
-
-export default Footer;
+}
