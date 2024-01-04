@@ -19,8 +19,8 @@
   },
   "devDependencies": {
     "@playwright/test": "1.40.1",
-    "@types/eslint": "8.56.0",
-    "@types/node": "20.10.5",
+    "@types/eslint": "8.56.1",
+    "@types/node": "20.10.6",
     "@types/react": "18.2.46",
     "@types/react-dom": "18.2.18",
     "@types/sharp": "0.31.1",
@@ -28,8 +28,8 @@
     "eslint-config-upleveled": "7.5.0",
     "postcss": "8.4.32",
     "stylelint": "16.1.0",
-    "stylelint-config-upleveled": "1.0.5",
+    "stylelint-config-upleveled": "1.0.7",
     "typescript": "5.3.3"
   },
-  "packageManager": "pnpm@8.13.1"
+  "packageManager": "pnpm@8.14.0"
 }
