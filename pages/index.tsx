@@ -10,9 +10,13 @@ export default function HomePage() {
   return (
     <div className="container">
       <Hero data={hero} />
+      
       <About data={about} />
+      
       <Features data={features} />
+      
       <Portfolio data={portfolio} />
+      
       <Footer data={footer} />
     </div>
   );
